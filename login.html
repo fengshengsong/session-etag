@@ -1,0 +1,22 @@
+<!DOCTYPE htm>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Login</title>
+		<script src="/session-etag.js"></script>
+	</head>
+
+	<body>
+		<form action="/login/index" method="post">
+			<input type="text" name="username" />
+			<input type="text" name="password" />			
+		    <input type="hidden" name="etag" />
+		    <input type="submit" name="submit" />
+		</form>
+		<script>
+			console.log(window.user_info);
+		</script>
+	</body>
+
+</html>
